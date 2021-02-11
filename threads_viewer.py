@@ -37,7 +37,7 @@ def get_channel():
     # Reading the channel name - passed as an argument to this script
     if len(sys.argv) >= 2:
         global channel_url
-        channel_url += sys.argv[1]
+        channel_url += "fastroni"#sys.argv[1]
     else:
         print("An error has occurred while trying to read arguments. Did you specify the channel?")
         sys.exit(1)
