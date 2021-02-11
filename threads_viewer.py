@@ -35,13 +35,12 @@ def print_exception():
 
 def get_channel():
     # Reading the channel name - passed as an argument to this script
-    channel_url += "fastroni"
-    #if len(sys.argv) >= 2:
-        #global channel_url
-        #channel_url += sys.argv[1]
-    #else:
-        #print("An error has occurred while trying to read arguments. Did you specify the channel?")
-        #sys.exit(1)
+    if len(sys.argv) >= 2:
+        global channel_url
+        channel_url += sys.argv[1]
+    else:
+        print("An error has occurred while trying to read arguments. Did you specify the channel?")
+        sys.exit(1)
 
 
 def get_proxies():
