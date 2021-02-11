@@ -59,8 +59,8 @@ def get_proxies():
 def get_url():
     url = ""
     try:
-        streams = session.streams(channel_url)
         print("URL = " + channel_url)
+        streams = session.streams(channel_url)
         try:
             url = streams['audio_only'].url
         except:
